@@ -4,6 +4,7 @@
   "version": "5.3.1",
   "main": "src/index.js",
   "publishConfig": {
+    "access": "restricted",  
     "registry": "https://registry.npmjs.org/"
   },
   "homepage": "https://github.com/wix/react-native-keyboard-input",
@@ -28,7 +29,14 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint src -c .eslintrc",
-    "e2e": "detox test"
+    "e2e": "detox test",
+    "link-package": "yarn link",
+    "ship-it": "npm publish",
+    "release": "yarn version --patch && yarn ship-it",
+    "release:minor": "yarn version --minor && yarn ship-it",
+    "release:major": "yarn version --major && yarn ship-it",
+    "preversion": "yarn test",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "lodash": "^4.17.4",
