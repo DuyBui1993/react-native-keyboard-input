@@ -1,5 +1,5 @@
 {
-  "name": "react-native-keyboard-input",
+  "name": "@ryverapp/react-native-keyboard-input",
   "description": "React Native Custom Input Controller",
   "version": "5.3.1",
   "main": "src/index.js",
