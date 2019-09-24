@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "react-native-keyboard-tracking-view": "^5.5.0"
+    "react-native-keyboard-tracking-view": "git+https://github.com/bzaman/react-native-keyboard-tracking-view.git#3123ab2a30efbeda229d2860a3475c311416f588"
   },
   "peerDependencies": {
     "react": "^16.6.0-alpha.8af6728",
